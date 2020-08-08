@@ -1,3 +1,4 @@
+//https://itnext.io/the-magic-of-rxjs-sharing-operators-and-their-differences-3a03d699d255
 import { of, Observable, interval, EMPTY, timer } from 'rxjs'; 
 import { map, mergeMap, switchMap, tap, share, take, shareReplay, publishReplay,refCount, publish } from 'rxjs/operators';
 
@@ -25,12 +26,3 @@ setTimeout(() => {
   }
 );
 }, 2000);
-
-// const list = [1, 2, 3, 5, 6];
-// const source = of(...list).pipe(
-//   switchMap(value => {
-//      of(value);
-//   })
-// );
-
-// source.subscribe(x => console.log(x));
